@@ -4,8 +4,7 @@
     .header
         &__container
             width: 90%
-            margin: auto
-            margin-left: 83px
+            margin: 0 83px
 @media screen and ( max-width: 1350px  ) 
     .logo
         margin-right: 3.85rem  
@@ -15,16 +14,14 @@
     .header
         &__container
             width: 90%
-            margin: auto
-            margin-left: 83px
+            margin: 0 83px 
 @media screen and ( max-width: 1218px  ) 
     html
         font-size: 12px
     .header
         &__container
             width: 90%
-            margin: auto
-            margin-left: 83px
+            margin: 0 83px
     .nav
         &__item
             margin-right: 1rem 
@@ -35,25 +32,23 @@
     .contacts
         &__phone
             margin-right: 1.71rem
- 
+        &__button 
+            margin-right: 3rem
 
 @media screen and ( max-width: 1012px  )    
     .header
         &__container
             width: 90%
-            margin: auto
-          
-            
+            margin: auto               
     .hero
         &__instagram
             display: none
-  
+        &__content
+             margin-left: 0
     .nav
         &__item
             display: none             
 
-        &__content
-            margin-left: 0 
 
 @media screen and ( max-width: 578px  )     
     html
@@ -71,21 +66,27 @@
             color: $white
             text-decoration: none
     .title
-        font-size: 1.64rem       
+        font-size: 1.64rem 
+        line-height: 2rem      
     .hero
         &__text
             font-size: 1.3rem
-            margin-bottom: 2.28rem
+            margin-bottom: 2rem
+            line-height: 1.5rem
         &__content
             max-width: 29.36rem
         &__button
             display: block
-            min-width: 22.86rem
-            margin-bottom: 1.85rem     
+            min-width: 22.86rem 
+            margin-left: 0   
         &__scroll-down
             display: none
-
+    .hero__primary
+        min-width: 22.86rem
+        margin-bottom: 1rem   
 @media screen and ( max-height: 540px  ) 
     .hero
         &__scroll-down
             display: none
+        &__content
+            margin-top: 30px

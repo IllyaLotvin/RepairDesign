@@ -383,11 +383,9 @@ body {
   background-color: #131313;
   padding: 24px 0; }
   .header__container {
-    max-width: 1400px;
     justify-content: space-between;
     width: 90%;
-    margin: auto;
-    margin-left: 5.92rem; }
+    margin: 0 5.92rem; }
 
 .menu {
   display: flex;
@@ -452,7 +450,8 @@ body {
     align-items: center; }
   .hero__content {
     max-width: 770px;
-    position: relative; }
+    position: relative;
+    margin-left: 4.28rem; }
   .hero__text {
     font-size: 1.57rem;
     line-height: 2.2rem;
@@ -497,8 +496,7 @@ body {
     font-size: 13px; }
   .header__container {
     width: 90%;
-    margin: auto;
-    margin-left: 83px; } }
+    margin: 0 83px; } }
 
 @media screen and (max-width: 1350px) {
   .logo {
@@ -507,22 +505,22 @@ body {
     margin-right: 1.85rem; }
   .header__container {
     width: 90%;
-    margin: auto;
-    margin-left: 83px; } }
+    margin: 0 83px; } }
 
 @media screen and (max-width: 1218px) {
   html {
     font-size: 12px; }
   .header__container {
     width: 90%;
-    margin: auto;
-    margin-left: 83px; }
+    margin: 0 83px; }
   .nav__item {
     margin-right: 1rem; }
   .logo {
     margin-right: 2.45rem; }
   .contacts__phone {
-    margin-right: 1.71rem; } }
+    margin-right: 1.71rem; }
+  .contacts__button {
+    margin-right: 3rem; } }
 
 @media screen and (max-width: 1012px) {
   .header__container {
@@ -530,10 +528,10 @@ body {
     margin: auto; }
   .hero__instagram {
     display: none; }
+  .hero__content {
+    margin-left: 0; }
   .nav__item {
-    display: none; }
-  .nav__content {
-    margin-left: 0; } }
+    display: none; } }
 
 @media screen and (max-width: 578px) {
   html {
@@ -548,19 +546,26 @@ body {
     color: #fff;
     text-decoration: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 1.64rem;
+    line-height: 2rem; }
   .hero__text {
     font-size: 1.3rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2rem;
+    line-height: 1.5rem; }
   .hero__content {
     max-width: 29.36rem; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
+    margin-left: 0; }
   .hero__scroll-down {
-    display: none; } }
+    display: none; }
+  .hero__primary {
+    min-width: 22.86rem;
+    margin-bottom: 1rem; } }
 
 @media screen and (max-height: 540px) {
   .hero__scroll-down {
-    display: none; } }
+    display: none; }
+  .hero__content {
+    margin-top: 30px; } }
