@@ -322,7 +322,8 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 0.93rem; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -346,9 +347,12 @@ template {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+html {
+  font-size: 14px; }
+
 body {
   font-family: 'Futura Book' , sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
 
 .section-title {
   text-align: center;
@@ -381,13 +385,14 @@ body {
 
 .logo {
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: 5.85rem; }
 
 .nav__item {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 40px;
+  margin-right: 2.85rem;
   transition: color 0.4s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -396,7 +401,7 @@ body {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 3.21rem; }
 
 .hero {
   position: relative;
@@ -424,8 +429,8 @@ body {
     align-items: center; }
   .hero__scroll-down {
     position: absolute;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.9rem;
     background-color: #131313;
     color: #fff;
     left: 0;
@@ -437,7 +442,7 @@ body {
     max-width: 670px;
     position: relative; }
   .hero__text {
-    font-size: 22px; }
+    font-size: 1.57rem; }
   .hero__button {
     margin-right: 20px; }
 
@@ -461,7 +466,7 @@ body {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 40px; }
+  font-size: 2.857rem; }
   .title--primary {
     color: #E3B873; }
 
@@ -469,3 +474,60 @@ body {
   margin-right: 15px;
   font-size: 14px;
   text-transform: uppercase; }
+
+@media screen and (max-width: 1450px) {
+  html {
+    font-size: 13px; } }
+
+@media screen and (max-width: 1350px) {
+  .logo {
+    margin-right: 3.85rem; }
+  .nav__item {
+    margin-right: 1.85rem; } }
+
+@media screen and (max-width: 1190px) {
+  .logo {
+    margin-right: 2.45rem; }
+  .contacts__phone {
+    margin-right: 1.71rem; } }
+
+@media screen and (max-width: 1218px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 1012px) {
+  .hero__instagram {
+    display: none; }
+  .nav__item {
+    display: none; }
+  .nav__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 578px) {
+  html {
+    font-size: 12px; }
+  .contacts__button {
+    display: none; }
+  .contacts__phone {
+    margin-right: 0;
+    color: #fff;
+    text-decoration: none; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__text {
+    font-size: 1.3rem;
+    margin-bottom: 2.28rem; }
+  .hero__content {
+    max-width: 29.36rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; }
+  .hero__scroll-down {
+    display: none; } }
+
+@media screen and (max-height: 540px) {
+  .hero__scroll-down {
+    display: none; } }
