@@ -383,7 +383,7 @@ body {
   background-color: #131313;
   padding: 24px 0; }
   .header__container {
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
     margin: 0 5.92rem; }
 
