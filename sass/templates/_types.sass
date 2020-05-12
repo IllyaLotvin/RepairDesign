@@ -1,0 +1,42 @@
+.row
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+.col
+    flex-basis: 31%
+    max-width: 392px
+    
+.card
+    &__image
+        width: 100%
+    &__text
+        position: relative
+        max-width: 23.6rem
+        margin: auto
+        margin-top: -9rem
+        padding: 1.79rem 2.14rem
+        background-color: $white
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+    &__title
+        font-family: 'Yeseva One', cursive
+        font-size: 1.29rem  
+        margin-bottom: 0.3rem
+    &__list
+        margin: 0
+        
+        padding: 0 0 0 1.3rem
+        font-size: 1.07rem
+        line-height: 1.79rem
+        color: $grey
+        margin-bottom: 2.5rem
+    &__pricetag
+        position: absolute
+        left: 0
+        bottom: -2rem
+        color: $white
+        font-size: 1.29rem
+        font-family: 'Yeseva One', cursive
+        text-transform: uppercase
+        background-color: $primary
+        padding: 1.214rem 2.5rem
