@@ -8,5 +8,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     modalBtn.forEach(element => {
         element.addEventListener('click', switchModal);
     }); 
+    modal.addEventListener('click', (e) => {
+        if(e.target === modal) {
+            switchModal();
+        }
+    });
     closeModal.addEventListener('click', switchModal);
-}); 
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.code === "Escape") {
+        switchModal();
+      }
+    })
+});
