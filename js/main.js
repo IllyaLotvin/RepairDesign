@@ -43,4 +43,13 @@ $(document).ready(function () {
           modal.removeClass('modal--visible');
         }
     });
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    })
+    
 });

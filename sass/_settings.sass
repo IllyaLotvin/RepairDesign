@@ -11,23 +11,45 @@ body
 img
   max-width: 100%
 
-
-
 .section
-    padding: 60px 0
-    &-title
-        text-align: center
+  padding: 60px 0
+  &--dark
+    background-color: $dark   
+  &-title
+    text-align: center
+    margin-bottom: 1.9rem 
+    &__left
+      text-align: left
+    &__project
+      display: flex
+      line-height: 138%
+      align-items: center
+      &::after
+        content: ''
+        width: 80px
+        height: 1px
+        background-color: $primary
+        margin-left: 2rem
+    &__text
+      font-size: 1.28rem
+      line-height: 2.07rem
+      max-width: 31.57rem
+    &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive   
+      &--primary
+        color: $primary
         text-transform: uppercase
         font-family: 'Yeseva One', cursive
-        margin-bottom: 1.9rem
-        
-        &__image
-            display: flex
-            align-items: center
-            justify-content: center
-            &::before, &::after
-                content: ''
-                width: 32px
-                height: 2px
-                background-color: $primary
-                margin: 0 10px
+    &__text
+      color: $white
+    &__image
+      display: flex
+      align-items: center
+      justify-content: center
+      &::before, &::after
+        content: ''
+        width: 32px
+        height: 2px
+        background-color: $primary
+        margin: 0 10px

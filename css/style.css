@@ -390,6 +390,19 @@ template {
   max-width: 1300px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.col-31 {
+  flex-basis: 31%;
+  max-width: 392px; }
+
+.col-50 {
+  width: 50%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -405,11 +418,36 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313; }
   .section-title {
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
     margin-bottom: 1.9rem; }
+    .section-title__left {
+      text-align: left; }
+    .section-title__project {
+      display: flex;
+      line-height: 138%;
+      align-items: center; }
+      .section-title__project::after {
+        content: '';
+        width: 80px;
+        height: 1px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
+    .section-title__text {
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      max-width: 31.57rem; }
+    .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive; }
+      .section-title__heading--primary {
+        color: #E3B873;
+        text-transform: uppercase;
+        font-family: 'Yeseva One', cursive; }
+    .section-title__text {
+      color: #fff; }
     .section-title__image {
       display: flex;
       align-items: center;
@@ -537,6 +575,29 @@ img {
   margin-right: 15px;
   font-size: 14px;
   text-transform: uppercase; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    color: #fff; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One';
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-pagination-button-prew {
+  background: url("..img/project-arrow.svg"); }
 
 .row {
   display: flex;
