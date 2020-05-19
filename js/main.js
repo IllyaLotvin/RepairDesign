@@ -38,18 +38,30 @@ $(document).ready(function () {
           switchModal();
         }
     })
-    modal.addEventListener('click', (e) => {
-     if(e.target === modal) {
-          modal.removeClass('modal--visible');
-        }
-    });
+    // modal.addEventListener('click', (e) => {
+    //  if(e.target === modal) {
+    //       modal.removeClass('modal--visible');
+    //     }
+    // });
 
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
-        },
+        },  
     })
+
+    var next = $('.swiper-button-next');
+    var prev = $('.swiper-button-prev');
+    var bullets = $('.swiper-pagination');
+
+    next.css('left', prev.width() * 5.5 + 10 + bullets.width() + 10)
+    bullets.css('left', prev.width() * 3.2 + 10)
+
     
 });
