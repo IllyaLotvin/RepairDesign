@@ -597,11 +597,18 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide__container {
+    max-width: 415px;
+    display: flex;
+    flex-wrap: wrap; }
   .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 2.42rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
     color: #fff;
+    padding: 0;
     padding-bottom: 2rem; }
+    .swiper-slide__text:first-child {
+      margin-right: 7.4rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
