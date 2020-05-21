@@ -65,4 +65,24 @@ $(document).ready(function () {
 
     new WOW().init();
     
+    $('.modal__form').validate({
+        errorClass: "invalid",
+        rules: {
+            userName: "required",
+            userPhone: "required",
+            userEmail: {
+               required: true,
+               email: true
+            }
+        },
+    
+        messages: {
+            userName: "Имя обязательно",
+            userPhone: "Телефон обязателен",
+            userEmail: {
+            required: "Обязательно укажите Email",
+            email: "Введите в формате: name@domein.com "
+        }
+      }
+    });
 });
