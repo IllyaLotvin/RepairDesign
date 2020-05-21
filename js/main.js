@@ -68,7 +68,10 @@ $(document).ready(function () {
     $('.modal__form').validate({
         errorClass: "invalid",
         rules: {
-            userName: "required",
+            userName: {          
+               required: true,
+               minlength: 2
+            },
             userPhone: "required",
             userEmail: {
                required: true,
@@ -77,7 +80,10 @@ $(document).ready(function () {
         },
     
         messages: {
-            userName: "Имя обязательно",
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя должно быть не меньше 2 символов"
+            },
             userPhone: "Телефон обязателен",
             userEmail: {
             required: "Обязательно укажите Email",
@@ -85,4 +91,6 @@ $(document).ready(function () {
         }
       }
     });
+
+    $('[type=tel').mask("+38(000) 00-00-0-00", {placeholder: "+38 (___) __-__-_-__"});
 });
