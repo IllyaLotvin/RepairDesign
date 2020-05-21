@@ -92,5 +92,5 @@ $(document).ready(function () {
       }
     });
 
-    $('[type=tel').mask("+38(000) 00-00-0-00", {placeholder: "+38 (___) __-__-_-__"});
+    $('[type=tel').mask("+38(000) 00-00-0-00", {placeholder: "+38..."});
 });
