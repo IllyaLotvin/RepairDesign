@@ -1,12 +1,16 @@
 .footer
     background: $dark url('../img/footer-bg.jpg') no-repeat center / cover
+    
     &__wrap
+        // position: absolute
         background-color: $black
         max-width: 63.07rem
+        width: 63.07rem
         margin: auto
-        margin-bottom: 3.714rem
+        margin-bottom: 5rem
         padding: 2.5rem
         color: $white
+        margin-top: -10rem
     &__title
         color: $white
         text-transform: uppercase
@@ -36,7 +40,44 @@
         margin-bottom: 3.6rem
     &__button
         margin: auto
-        padding: 1.285rem 4.785rem  
+        padding: 1.285rem 4.785rem 
+    &__main-info
+        color: $primary
+        font-family: 'Yeseva One', cursive
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 28px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 2.3rem
+    &__socials
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 3rem
+        
+    &__email
+        display: flex
+        background: $primary
+        border-radius: 50%
+        width: 2.5rem
+        height: 2.5rem
+        justify-content: center
+        margin-right: 1.2rem
+    &__instagramm
+        display: flex
+        background: $primary
+        border-radius: 50%
+        width: 2.5rem
+        height: 2.5rem
+        justify-content: center
+    &__map
+        min-height: 465px
+        display: flex
+        margin: auto 
+        max-width: 925px
+        margin-bottom: 4rem
     &__menu
         background: $dark
         padding: 4.285rem 0

@@ -93,4 +93,21 @@ $(document).ready(function () {
     });
 
     $('[type=tel').mask("+38(000) 00-00-0-00", {placeholder: "+38..."});
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: {lat: -33.9, lng: 151.2}
+        });
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title:"Yoa are here",
+        icon: 'img/marker.png'
+        });
+        setMarkers(map);
+    }
+
 });
