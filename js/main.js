@@ -62,9 +62,15 @@ $(document).ready(function () {
 
     next.css('left', prev.width() + 20 + bullets.width() + 10)
     bullets.css('left', prev.width() + 15)
-
+    wow = new WOW({
+        mobile:       false,
+        live:         true,
+        callback:     function(box) {
+          console.log('animation started');
+        }
+    });
     new WOW().init();
-    
+    inView('.types__card').once('fadeInDown', runAnimation);
     $('.modal__form').validate({
         errorClass: "invalid",
         rules: {

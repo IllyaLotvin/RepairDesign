@@ -4,7 +4,7 @@
     .header
         &__container
             width: 90%
-            margin: 0 83px
+            margin: 0 83px       
 @media screen and ( max-width: 1360px  ) 
     .logo
         margin-right: 3.85rem  
@@ -30,8 +30,13 @@
                 padding: 0
         &__features3
             margin-right: 0
-        
-
+    .design
+        &__card
+            width: 28.5rem
+@media screen and ( max-width: 1300px  ) 
+    .design
+        &__card
+            width: 27rem
 @media screen and ( max-width: 1218px  ) 
     html
         font-size: 12px
@@ -66,9 +71,43 @@
                 padding: 0
         &__features3
             margin-right: 0
+    .our-team
+        &__row
+            max-width: 80rem
+            width: 95%
+        &__main-text
+            color: $white
 @media screen and ( max-width: 1165px  )
     .six-steps
         display: none
+    .design
+        margin-bottom: 32rem
+        background: $dark
+        &__card
+            width: 25rem
+        &__section-title
+            color: $white
+    .our-team
+        background: $dark
+        padding-top: 2rem
+        padding-bottom: 4rem
+           
+@media screen and ( max-width: 1100px  )
+    .our-clients
+        display: none 
+    .our-team
+        padding-bottom: 21rem  
+        margin-bottom: -2rem
+@media screen and ( max-width: 1080px  )
+    .design
+        &__card
+            width: 24rem
+        &__card-text
+            width: 90%
+            margin-left: 0
+    .our-team
+        &__row
+            width: 75rem
 @media screen and ( max-width: 1012px  )    
     .header
         &__container
@@ -78,11 +117,32 @@
         &__instagram
             display: none
         &__content
-             margin-left: 0
+            margin-left: 0
     .nav
         &__item
             display: none             
-
+    .design
+        &__card
+            width: 22rem
+        &__card-text
+            width: 85%
+            margin-left: 0
+    .our-team
+        &__card
+            width: 20rem
+    .design
+        &__card
+            width: 20.7rem
+        &__card-text
+            width: 85%
+            margin-left: 0
+    .our-team
+        &__row
+            width: 70rem
+@media screen and ( max-width: 930px  )
+    .our-team
+        &__row
+            width: 66rem
 @media screen and ( max-width: 890px  )
     .row 
         flex-direction: column
@@ -90,15 +150,46 @@
     .types, .design
         &__card
             margin-bottom: 5rem
-    
+    .types
+        &__card
+            width: 29rem
     .card
         &__text
             margin-left: 0
         &__pricetag
-        padding: 1.214rem 2.1rem
+            padding: 1.214rem 2.1rem
     .col-50-2
         margin-top: 2rem
-
+    .design
+        &__card
+            width: 31rem
+            &:last-child
+                padding-bottom: 8rem
+        &__card-text
+            width: 100%
+    .our-team
+        &__row
+            width: 100%
+        &__card
+            width: 29rem
+            margin-bottom: 8rem
+        &__about
+            margin-right: 13.5rem
+        &__main-text
+            display: none
+@media screen and ( max-width: 774px  )
+    .footer
+        &__wrap
+            left: 0
+            margin: 0
+            margin-top: -23rem
+            width: 100%
+    .our-team
+        &__card
+            margin-bottom: 8rem
+        &__about
+            margin-right: 9.5rem
+            
 @media screen and ( max-width: 578px  )     
     html
         font-size: 12px
@@ -132,10 +223,22 @@
             display: none
     .hero__primary
         min-width: 22.86rem
-        margin-bottom: 1rem   
+        margin-bottom: 1rem  
+    .footer
+        padding-bottom: 3rem
+        &__menu
+            display: none
+        &__input-group
+            flex-basis: 100% 
 @media screen and ( max-height: 540px  ) 
     .hero
         &__scroll-down
             display: none
         &__content
             margin-top: 30px
+    .footer
+        &__input-group
+            display: flex
+            flex-direction: column
+            flex-basis: 100%
+            margin-bottom: 3.2rem

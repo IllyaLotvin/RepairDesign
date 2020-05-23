@@ -404,7 +404,7 @@ label.invalid {
 
 .col-31 {
   flex-basis: 31%;
-  max-width: 392px; }
+  max-width: 28rem; }
 
 .col-50 {
   width: 50%; }
@@ -901,7 +901,7 @@ img {
   width: 5rem;
   margin-top: -2.5rem;
   margin-left: -2.5rem;
-  z-index: 10000; }
+  z-index: 0; }
   .square-image {
     margin: auto; }
 
@@ -909,7 +909,7 @@ img {
   background: url("../img/bg-lines-clients.svg");
   padding-top: 45rem;
   margin-top: -35rem;
-  padding-bottom: 25rem; }
+  padding-bottom: 21rem; }
   .our-clients__text {
     text-align: center;
     font-style: normal;
@@ -976,14 +976,16 @@ img {
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
   .footer__wrap {
+    position: absolute;
     background-color: #181818;
     max-width: 63.07rem;
     width: 63.07rem;
-    margin: auto;
+    left: 50%;
+    margin-left: -31.5rem;
     margin-bottom: 5rem;
     padding: 2.5rem;
     color: #fff;
-    margin-top: -10rem; }
+    margin-top: -18rem; }
   .footer__title {
     color: #fff;
     text-transform: uppercase;
@@ -1023,7 +1025,8 @@ img {
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 2.3rem; }
+    margin-bottom: 2.3rem;
+    padding-top: 23rem; }
   .footer__socials {
     display: flex;
     justify-content: center;
@@ -1052,7 +1055,7 @@ img {
     margin-bottom: 4rem; }
   .footer__menu {
     background: #131313;
-    padding: 4.285rem 0; }
+    padding: 3.285rem 0; }
 
 .modal {
   opacity: 0;
@@ -1137,7 +1140,13 @@ img {
         margin-right: 0;
         padding: 0; }
     .feature-list__features3 {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .design__card {
+    width: 28.5rem; } }
+
+@media screen and (max-width: 1300px) {
+  .design__card {
+    width: 27rem; } }
 
 @media screen and (max-width: 1218px) {
   html {
@@ -1167,11 +1176,43 @@ img {
         margin-right: 0;
         padding: 0; }
     .feature-list__features3 {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .our-team__row {
+    max-width: 80rem;
+    width: 95%; }
+  .our-team__main-text {
+    color: #fff; } }
 
 @media screen and (max-width: 1165px) {
   .six-steps {
-    display: none; } }
+    display: none; }
+  .design {
+    margin-bottom: 32rem;
+    background: #131313; }
+    .design__card {
+      width: 25rem; }
+    .design__section-title {
+      color: #fff; }
+  .our-team {
+    background: #131313;
+    padding-top: 2rem;
+    padding-bottom: 4rem; } }
+
+@media screen and (max-width: 1100px) {
+  .our-clients {
+    display: none; }
+  .our-team {
+    padding-bottom: 21rem;
+    margin-bottom: -2rem; } }
+
+@media screen and (max-width: 1080px) {
+  .design__card {
+    width: 24rem; }
+  .design__card-text {
+    width: 90%;
+    margin-left: 0; }
+  .our-team__row {
+    width: 75rem; } }
 
 @media screen and (max-width: 1012px) {
   .header__container {
@@ -1182,7 +1223,25 @@ img {
   .hero__content {
     margin-left: 0; }
   .nav__item {
-    display: none; } }
+    display: none; }
+  .design__card {
+    width: 22rem; }
+  .design__card-text {
+    width: 85%;
+    margin-left: 0; }
+  .our-team__card {
+    width: 20rem; }
+  .design__card {
+    width: 20.7rem; }
+  .design__card-text {
+    width: 85%;
+    margin-left: 0; }
+  .our-team__row {
+    width: 70rem; } }
+
+@media screen and (max-width: 930px) {
+  .our-team__row {
+    width: 66rem; } }
 
 @media screen and (max-width: 890px) {
   .row {
@@ -1190,12 +1249,40 @@ img {
     align-items: center; }
   .types__card, .design__card {
     margin-bottom: 5rem; }
-  .card {
+  .types__card {
+    width: 29rem; }
+  .card__text {
+    margin-left: 0; }
+  .card__pricetag {
     padding: 1.214rem 2.1rem; }
-    .card__text {
-      margin-left: 0; }
   .col-50-2 {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+  .design__card {
+    width: 31rem; }
+    .design__card:last-child {
+      padding-bottom: 8rem; }
+  .design__card-text {
+    width: 100%; }
+  .our-team__row {
+    width: 100%; }
+  .our-team__card {
+    width: 29rem;
+    margin-bottom: 8rem; }
+  .our-team__about {
+    margin-right: 13.5rem; }
+  .our-team__main-text {
+    display: none; } }
+
+@media screen and (max-width: 774px) {
+  .footer__wrap {
+    left: 0;
+    margin: 0;
+    margin-top: -23rem;
+    width: 100%; }
+  .our-team__card {
+    margin-bottom: 8rem; }
+  .our-team__about {
+    margin-right: 9.5rem; } }
 
 @media screen and (max-width: 578px) {
   html {
@@ -1226,10 +1313,21 @@ img {
     display: none; }
   .hero__primary {
     min-width: 22.86rem;
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .footer {
+    padding-bottom: 3rem; }
+    .footer__menu {
+      display: none; }
+    .footer__input-group {
+      flex-basis: 100%; } }
 
 @media screen and (max-height: 540px) {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 3.2rem; } }
