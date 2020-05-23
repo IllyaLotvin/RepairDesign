@@ -1052,7 +1052,8 @@ img {
     display: flex;
     margin: auto;
     max-width: 925px;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    min-width: 240px; }
   .footer__menu {
     background: #131313;
     padding: 3.285rem 0; }
@@ -1319,7 +1320,10 @@ img {
     .footer__menu {
       display: none; }
     .footer__input-group {
-      flex-basis: 100%; } }
+      flex-basis: 100%; }
+    .footer__map {
+      max-width: 340px;
+      max-height: 255px; } }
 
 @media screen and (max-height: 540px) {
   .hero__scroll-down {
