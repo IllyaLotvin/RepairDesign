@@ -70,8 +70,51 @@ $(document).ready(function () {
         }
     });
     new WOW().init();
-    inView('.types__card').once('fadeInDown', runAnimation);
+
+    $(window).scroll(function(){
+        var wt = $(window).scrollTop();
+        var wh = $(window).height();
+        var et = $('.types__card').offset().top;
+        var eh = $('.types__card').outerHeight();
+        var dh = $(document).height();   
+        if (wt + wh >= et || wh + wt == dh || eh + et < wh){
+            console.log('Элемент показан');
+        }
+    });
+
+    var block_show = false;
+ 
+    function scrollTracking(){
+        if (block_show) {
+            return false;
+        }
+     
+        var wt = $(window).scrollTop();
+        var wh = $(window).height();
+        var et = $('.types__card').offset().top;
+        var eh = $('.types__card').outerHeight();
+        var dh = $(document).height();   
+     
+        if (wt + wh >= et || wh + wt == dh || eh + et < wh){
+            block_show = true;
+            
+            // Код анимации
+            $('.types__card div:eq(0)').show('fast', function(){
+                $(this).next().show('fast', arguments.callee);
+            });
+        }
+    }
+     
+    $(window).scroll(function(){
+        scrollTracking();
+    });
+        
+    $(document).ready(function(){ 
+        scrollTracking();
+    });
+
     $('.modal__form').validate({
+        errorElement: "div",
         errorClass: "invalid",
         rules: {
             userName: {          
@@ -92,13 +135,30 @@ $(document).ready(function () {
             },
             userPhone: "Телефон обязателен",
             userEmail: {
-            required: "Обязательно укажите Email",
-            email: "Введите в формате: name@domein.com "
+                required: "Обязательно укажите Email",
+                email: "Введите в формате: name@domein.com "
+            }
+        },
+
+        submitHendler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                dataType: "dataType",
+                success: function (response) {
+                    console.loh("Ajax" + response);
+                    $(form)[0].reset();
+                    modal.toggleClass('modal--visible');
+                },
+                error: function (response) {
+                    console.error('Ошибка запроса: ' + response);
+                }
+            });
         }
-      }
     });
 
-    $('[type=tel').mask("+38(000) 00-00-0-00", {placeholder: "+38..."});
+   $('[type=tel]').mask("+38(000) 00-00-0-00", {placeholder: "+38..."});
 
     function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {

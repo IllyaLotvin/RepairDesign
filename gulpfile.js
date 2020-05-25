@@ -7,14 +7,14 @@ const {src, dest, watch} = require("gulp"),
  function bs() {
    serveSass();
   browserSync.init({
-    server: {
-      baseDir: "./",
-    },
+    proxy: "RepairDesign"
   });
   watch("./*.html").on("change", browserSync.reload);
   watch("./sass/**/*.sass" , serveSass);
   watch("./sass/**/*.scss" , serveSass);
   watch("./js/*.js").on("change", browserSync.reload);
+  watch("./**/*.php").on("change", browserSync.reload);
+
 };
 
 function serveSass() {
