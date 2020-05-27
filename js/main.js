@@ -126,8 +126,10 @@ $(document).ready(function () {
             userEmail: {
                required: true,
                email: true
+            },
+            policyCheckbox: { 
+                required: true,
             }
-
         },
     
         messages: {
