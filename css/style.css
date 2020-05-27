@@ -435,7 +435,7 @@ img {
 
 .section {
   padding: 60px 0; }
-  .section--dark {
+  .section-dark {
     background-color: #131313; }
   .section-title {
     text-align: center;
@@ -756,80 +756,8 @@ img {
   background-color: #E3B873;
   padding: 1.214rem 2.5rem; }
 
-.six-steps {
-  margin-top: -36rem;
-  padding-top: 35rem;
-  padding-bottom: 43rem; }
-  .six-steps__h4 {
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 1.5rem;
-    height: 15px;
-    display: block;
-    font-size: 15px;
-    line-height: 21px; }
-  .six-steps--h4 {
-    margin-top: 8rem;
-    margin-bottom: 1.2rem;
-    color: #E3B873; }
-  .six-steps__text {
-    max-width: 30.07rem;
-    font-size: 1.28rem;
-    line-height: 2.07rem;
-    color: #fff; }
-  .six-steps__text2 {
-    max-width: 30.07rem;
-    font-size: 1.28rem;
-    line-height: 2.07rem;
-    color: #fff;
-    padding-bottom: 4rem; }
-  .six-steps__image {
-    width: 100%; }
-
-.calculating {
-  color: #fff;
-  font-weight: 700;
-  font-family: 'Yeseva One', cursive;
-  display: block;
-  position: absolute;
-  margin-top: 5rem; }
-
-.divide {
-  font-weight: 400; }
-
-.section-title__text {
-  margin: 0; }
-
-.feature-list {
-  flex-wrap: wrap;
-  display: flex;
-  color: rgba(255, 255, 255, 0.3);
-  margin-bottom: 1rem; }
-  .feature-list__features {
-    width: 9rem;
-    max-width: 127px;
-    margin-right: 14.3rem;
-    margin-bottom: 2.2rem; }
-    .feature-list__features:last-child {
-      margin-right: 0; }
-  .feature-list__features3 {
-    margin-right: 0; }
-  .feature-list__feature {
-    font-size: 15px;
-    line-height: 18px; }
-  .feature-list__number {
-    display: block;
-    max-width: 1.1rem;
-    border-bottom: 1px solid #E3B873;
-    margin-bottom: 0.7rem; }
-    .feature-list__number:active {
-      color: #fff; }
-
 .our-team {
-  margin-top: -32rem; }
-  .our-team__section-title {
-    color: #fff; }
+  margin-top: 5rem; }
   .our-team__row {
     max-width: 73.357rem;
     margin: auto;
@@ -838,7 +766,6 @@ img {
     text-align: center;
     font-style: normal;
     font-weight: normal;
-    color: #fff;
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 7.285rem; }
@@ -910,7 +837,7 @@ img {
 
 .our-clients {
   background: url("../img/bg-lines-clients.svg");
-  padding-top: 45rem;
+  padding-top: 41rem;
   margin-top: -35rem;
   padding-bottom: 21rem; }
   .our-clients__text {

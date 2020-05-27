@@ -7,7 +7,7 @@ const {src, dest, watch} = require("gulp"),
  function bs() {
    serveSass();
   browserSync.init({
-    proxy: "RepairDesign"
+    proxy: "http://lotvinillya.biz.ua/index.html"
   });
   watch("./*.html").on("change", browserSync.reload);
   watch("./sass/**/*.sass" , serveSass);

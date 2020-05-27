@@ -119,19 +119,22 @@ $(document).ready(function () {
         rules: {
             userName: {          
                required: true,
-               minlength: 2
+               minlength: 2,
+               maxlength: 15
             },
             userPhone: "required",
             userEmail: {
                required: true,
                email: true
             }
+
         },
     
         messages: {
             userName: {
                 required: "Имя обязательно",
-                minlength: "Имя должно быть не меньше 2 символов"
+                minlength: "Имя должно быть не меньше 2 символов",
+                maxlength: "Имя должно быть не больше 15 символов"
             },
             userPhone: "Телефон обязателен",
             userEmail: {
@@ -153,6 +156,7 @@ $(document).ready(function () {
                 },
                 error: function (response) {
                     console.error('Ошибка запроса: ' + response);
+                    ym('64368412', 'reachGoal', 'form'); return true;
                 }
             });
         }
