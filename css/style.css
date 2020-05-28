@@ -323,14 +323,16 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.93rem; }
+  font-size: 0.93rem;
+  outline: none; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
     color: #fff;
     padding: 13.5px 22px;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3); }
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    outline: none; }
     .button--primary:hover {
       box-shadow: none;
       transition: box-shadow 0.2s; }
@@ -339,7 +341,8 @@ template {
     border: solid 1px #fff;
     background-color: transparent;
     margin-left: 15px;
-    padding: 17.5px 46px; }
+    padding: 17.5px 46px;
+    outline: none; }
 
 .hero__primary {
   padding: 20px 30px; }
@@ -393,6 +396,10 @@ label.invalid {
 
 .input.invalid {
   border-bottom: 1px solid red; }
+
+.comeback {
+  color: #fff;
+  text-decoration: none; }
 
 .container {
   width: 90%;
@@ -651,17 +658,24 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%; }
+  flex-basis: 30%;
+  outline: none; }
 
 .control__label {
-  margin-bottom: -7px; }
+  margin-bottom: -7px;
+  outline: none; }
 
 .control__button {
   padding: 1.2857rem 4.785rem; }
 
+.control__input {
+  color: black;
+  outline: none; }
+
 .control__policy {
   flex-basis: 100%;
-  margin-top: 1.1rem; }
+  margin-top: 1.1rem;
+  outline: none; }
   .control__policy-label {
     justify-content: center; }
 
@@ -936,13 +950,15 @@ img {
     display: flex;
     flex-direction: column;
     flex-basis: 45%;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 3.2rem;
+    outline: none; }
     .footer__input-group--full-width {
       flex-basis: 100%;
       margin-bottom: 2rem; }
   .footer__policy {
     flex-basis: 100%;
-    margin-bottom: 3.6rem; }
+    margin-bottom: 3.6rem;
+    outline: none; }
   .footer__button {
     margin: auto;
     padding: 1.285rem 4.785rem; }
@@ -962,6 +978,8 @@ img {
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem; }
+  .footer__input {
+    outline: none; }
   .footer__email {
     display: flex;
     background: #E3B873;
@@ -978,10 +996,11 @@ img {
     height: 2.5rem;
     justify-content: center; }
   .footer__map {
-    min-height: 465px;
     display: flex;
     margin: auto;
     max-width: 925px;
+    width: 925px;
+    height: 465px;
     margin-bottom: 4rem;
     min-width: 240px; }
   .footer__menu {
@@ -1020,7 +1039,8 @@ img {
     height: 28px;
     background: transparent url("../img/close-modal.svg") no-repeat center;
     border: none;
-    margin: 10px; }
+    margin: 10px;
+    outline: none; }
     .modal__close:hover {
       cursor: pointer; }
   .modal__title {
@@ -1031,16 +1051,21 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3.428rem; }
-  .modal__input:last-of-type {
-    margin-bottom: 0; }
+  .modal__input {
+    outline: none; }
+    .modal__input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3.428rem;
+      outline: none; }
+    .modal__input:last-of-type {
+      margin-bottom: 0; }
   .modal__policy {
-    margin-bottom: 2.7rem; }
+    margin-bottom: 2.7rem;
+    outline: none; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    outline: none; }
 
 @media screen and (max-width: 1450px) {
   html {
@@ -1118,7 +1143,6 @@ img {
   .six-steps {
     display: none; }
   .design {
-    margin-bottom: 32rem;
     background: #131313; }
     .design__card {
       width: 25rem; }
@@ -1126,13 +1150,19 @@ img {
       color: #fff; }
   .our-team {
     background: #131313;
-    padding-top: 2rem;
-    padding-bottom: 4rem; } }
+    margin-top: -5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem; }
+    .our-team__section-title {
+      color: #fff; }
+    .our-team__text {
+      color: #fff; } }
 
 @media screen and (max-width: 1100px) {
   .our-clients {
     display: none; }
   .our-team {
+    margin-top: -10rem;
     padding-bottom: 21rem;
     margin-bottom: -2rem; } }
 
@@ -1218,8 +1248,10 @@ img {
 @media screen and (max-width: 578px) {
   html {
     font-size: 12px; }
+  .container {
+    widows: 100%; }
   .header__container {
-    width: 90%;
+    width: 100%;
     margin: auto; }
   .contacts__button {
     display: none; }
@@ -1245,6 +1277,8 @@ img {
   .hero__primary {
     min-width: 22.86rem;
     margin-bottom: 1rem; }
+  .design__image {
+    width: 90%; }
   .footer {
     padding-bottom: 3rem; }
     .footer__menu {
@@ -1253,7 +1287,8 @@ img {
       flex-basis: 100%; }
     .footer__map {
       max-width: 340px;
-      max-height: 255px; } }
+      max-height: 240px;
+      height: 240px; } }
 
 @media screen and (max-height: 540px) {
   .hero__scroll-down {

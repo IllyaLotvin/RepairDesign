@@ -148,18 +148,18 @@ $(document).ready(function () {
         submitHendler: function(form) {
             $.ajax({
                 type: "POST",
-                url: "send.php",
+                url: "page.php",
                 data: $(form).serialize(),
-                dataType: "dataType",
                 success: function (response) {
                     console.loh("Ajax" + response);
+                    alert('Проверяйте почту)');
                     $(form)[0].reset();
                     modal.toggleClass('modal--visible');
                 },
-                error: function (response) {
-                    console.error('Ошибка запроса: ' + response);
-                    ym('64368412', 'reachGoal', 'form'); return true;
-                }
+                // error: function (response) {
+                //     console.error('Ошибка запроса: ' + response);
+                //     ym('64368412', 'reachGoal', 'form'); return true;
+                // }
             });
         }
     });

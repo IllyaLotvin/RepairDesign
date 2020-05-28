@@ -13,7 +13,7 @@ const {src, dest, watch} = require("gulp"),
   watch("./sass/**/*.sass" , serveSass);
   watch("./sass/**/*.scss" , serveSass);
   watch("./js/*.js").on("change", browserSync.reload);
-  watch("./**/*.php").on("change", browserSync.reload);
+  //watch("./**/*.php").on("change", browserSync.reload);
 
 };
 
